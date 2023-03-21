@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 0.8vw;
+}
+
+.boxcenter {
+  width: 60%;
+  /* trên dưới 0, căn giữa 2 bên */
+  margin: 0 auto;
+}
+
+.image-product img {
+  /* overflow: hidden; */
+
+  padding: 10px;
+}
+
+.image-product img:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.row {
+  float: left;
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.price-product {
+  color: #d0021c;
+  font-size: 18px;
+}
+
+.info-product {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.info-product:active {
+  color: red;
+}
+
+/* khoảng cách các cột */
+.mr {
+  margin-right: 2%;
+}
+.demo {
+  background-color: antiquewhite;
+  min-height: 100px;
+}
+
+.header {
+  background-color: aquamarine;
+  border: 1px solid #009900;
+  /* để chữ co giản theo trình duyệt dùng đơn vị vw */
+  color: blue;
+  border-radius: 5px;
+}
+
+.header h1 {
+  margin: 20px;
+  font-size: 1.2vw;
+}
+
+.menu {
+  background-color: black;
+  color: #ccc;
+  border-radius: 5px;
+}
+
+.boxphai {
+  float: left;
+  width: 24%;
+}
+
+.boxtrai {
+  float: left;
+  width: 74%;
+}
+
+.footer {
+  background-color: aquamarine;
+  border: 1px solid #009900;
+  text-align: center;
+  /* để chữ co giản theo trình duyệt dùng đơn vị vw */
+  font-size: 1vw;
+  color: blue;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.boxtitle {
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  background-color: #eee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+.boxcontent {
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  min-height: 200px;
+  /* phần input account, pass */
+  padding: 20px;
+}
+
+.boxcontent2 {
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  background-color: #eee;
+}
+
+.boxfooter {
+  padding: 10px;
+  background-color: #eee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px #ccc solid;
+  border-right: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
+
+.boxprice {
+  text-align: center;
+}
+
+.banner {
+  min-height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+.banner img {
+  height: 300px;
+}
+
+.boxsp {
+  overflow: hidden;
+  float: left;
+  width: 32%;
+  min-height: 300px;
+  border: 1px #eee solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.boxsp .img {
+  min-height: 230px;
+  text-align: center;
+}
+
+.img img {
+  height: 220px;
+  width: 100%;
+}
+
+.menu ul {
+  padding: 0px 15px;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline;
+  padding: 0 15px;
+}
+
+.menu ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover {
+  color: white;
+  font-size: 0.9vw;
+}
+
+/* forrm account */
+.formtaikhoan {
+  line-height: 150%;
+}
+/* nhập tk */
+.formtaikhoan input[type="text"],
+.formtaikhoan input[type="email"],
+.formtaikhoan input[type="password"],
+.frmcontent input[type="text"] {
+  width: 100%;
+  border: 1px #ccc solid;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.formtaikhoan input[type="checkbox"] {
+  border-radius: 5px;
+}
+
+.formtaikhoan input[type="submit"],
+.frmcontent input[type="submit"],
+.frmcontent input[type="reset"],
+.formtaikhoan input[type="reset"],
+.frmcontent input[type="button"] {
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px #ccc solid;
+}
+
+.formtaikhoan input[type="submit"]:hover,
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover {
+  background-color: #ccc;
+}
+
+.formtaikhoan li a {
+  color: teal;
+  text-decoration: none;
+}
+
+.formtaikhoan li a:hover {
+  color: #009900;
+  text-decoration: underline;
+}
+
+/* danh mục */
+.menudoc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menudoc ul li {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px #ccc solid;
+}
+
+.menudoc ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.menudoc ul li:hover {
+  background-color: #ccc;
+}
+
+/* searbox */
+.searbox input[type="text"] {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+}
+
+.top10 {
+  display: flex;
+  align-items: center;
+}
+
+.top10 img {
+  width: 25%;
+  height: 50px;
+  padding: 10px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+.top10 img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.top10 a {
+  text-decoration: none;
+  color: #6699;
+}
+
+.top10 a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.image-top10 img {
+  width: 100%;
+  height: auto;
+}
+
+/* admin */
+.headeradmin {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  /* để chữ co giản theo trình duyệt dùng đơn vị vw */
+  color: #666;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.headeradmin h1 {
+  font-size: 2vw;
+}
+
+.frmtitle {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  /* để chữ co giản theo trình duyệt dùng đơn vị vw */
+  color: #666;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+.frmcontent {
+  padding: 20px 0px;
+}
+
+/* bảng danh sách */
+.frmdsloai table {
+  width: 100%;
+  /* xóa khoảng cách giữa các table */
+  border-collapse: collapse;
+  border: 1px solid #999;
+}
+
+.frmdsloai table th {
+  padding: 20px;
+  background-color: #ccc;
+}
+
+/* .frmdsloai table th:nth-child(2) {
+  width: 30%;
+  background-color: #ccc;
+}
+
+.frmdsloai table th:nth-child(3) {
+  width: 40%;
+  background-color: #ccc;
+}
+
+.frmdsloai table th:nth-child(4) {
+  width: 20%;
+  background-color: #ccc;
+} */
+
+.frmdsloai table td {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* end slideshow */
+
+.spct {
+  text-align: center;
+}
+
+.spct img {
+  width: 50%;
+}
+
+/* formdangky */
+.thongbao {
+  color: red;
+}
+
+.addtocart {
+  margin: 15px 0;
+}
+
+.ttdathang {
+  text-decoration: none;
+}
+
+.inpsearch {
+  text-align: center;
+  margin-top: 10px;
+}
