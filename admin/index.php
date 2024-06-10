@@ -45,6 +45,8 @@ if (isset($_GET['act'])) {
             $listdanhmuc = loadall_danhmuc();
             include "danhmuc/list.php";
             break;
+            
+            //sửa danh mục
         case "suadm":
             // hiển thi chi tiết 1 danh mục nào đó
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -66,7 +68,10 @@ if (isset($_GET['act'])) {
             break;
             // end controler danh mục
 
-            // controler sản phẩm
+
+            
+
+            // CONTROLER SẢN PHẨM
 
             // nếu ấn vào danh mục
         case 'addsp':
@@ -90,7 +95,7 @@ if (isset($_GET['act'])) {
                 $thongbao = "Thêm thành công";
             }
             $listdanhmuc = loadall_danhmuc();
-            //    hiển thị danh mục
+            //    hiển thị sản phẩm
             include "sanpham/add.php";
             break;
             // nếu ấn vào sản phẩm
@@ -110,9 +115,10 @@ if (isset($_GET['act'])) {
             include "sanpham/list.php";
             break;
 
-            // xóa danh mục
+            // xóa sản phẩm
         case "xoasp":
-            // ktra id có tồn ại hay khôngg
+
+            // kiểm tra id có tồn ại hay khôngg
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 delete_sanpham($_GET['id']);
             }
@@ -120,15 +126,18 @@ if (isset($_GET['act'])) {
             $listsanpham = loadall_sanpham("", 0);
             include "sanpham/list.php";
             break;
+
         case "suasp":
             // hiển thi chi tiết 1 danh mục nào đó
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
 
                 $sanpham = loadone_sanpham($_GET['id']);
             }
+            
             $listdanhmuc = loadall_danhmuc();
             include "sanpham/update.php";
             break;
+            
         case "updatesp":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $id = $_POST['id'];
@@ -175,6 +184,8 @@ if (isset($_GET['act'])) {
             include "thongke/bieudo.php";
             break;
             // ======
+
+            // Xóa bình luận
         case "xoabl":
             // ktra id có tồn ại hay khôngg
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {

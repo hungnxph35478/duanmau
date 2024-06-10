@@ -7,13 +7,13 @@ function viewcart($del) {
                         $hinh = $img_path . $cart[2];
                         $ttien = $cart[3] * $cart[4];
                         $tong += $ttien;
-                        if($del==1) {
-                            $xoasp_th='<th>Thao Tác</th>';
-                        $xoasp_td='<td><a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xóa"></a></td>';
-                        } else {
-                            $xoasp_th='';
-                            $xoasp_td='';
-                        }
+                            if($del==1) {
+                                $xoasp_th='<th>Thao Tác</th>';
+                            $xoasp_td='<td><a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xóa"></a></td>';
+                            } else {
+                                $xoasp_th='';
+                                $xoasp_td='';
+                            }
                         echo '
                             <tr>
                                 <th>Hình</th>

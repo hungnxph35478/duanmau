@@ -40,6 +40,7 @@
             // sửa danh mục
             $suasp = 'index.php?act=suasp&id=' . $id;
             $xoasp = 'index.php?act=xoasp&id=' . $id;
+            // kiểm tra img phải là một file hay không
             $hinhanhpath = "../upload/" . $img;
             if (is_file($hinhanhpath)) {
               $hinh = "<img src='" . $hinhanhpath . "' height='80'>";

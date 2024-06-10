@@ -9,6 +9,7 @@ include "./view/header.php";
 include "global.php";
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 
+// biến $spnew sẽ chứa toàn bộ sản phẩm sẽ view ở foler view file home.php
 $spnew = loadall_sanpham_home();
 $dsdm = loadall_danhmuc();
 $dstop10 = loadall_sanpham_top10();

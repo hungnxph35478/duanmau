@@ -1,9 +1,11 @@
 <?php 
+// thêm danh mục
 function issert_danhmuc($tenloai){
     $sql = "insert into danhmuc(name) values('$tenloai')";
     pdo_execute($sql);
 }
 
+// xóa danh mục
 function delete_danhmuc($id){
     $sql = "delete from danhmuc where id=".$id;
                 pdo_execute($sql);

@@ -67,7 +67,7 @@ $dsbl = loadall_binhluan($idpro);
             </form>
         </div>
         <?php
-        // kieerm tra nut guibinhluan có tồn tại và click hay không
+        // kiểm tra nút gửi bình luận có tồn tại và click hay không
         if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
             $noidung = $_POST['noidung'];
             $idpro = $_POST['idpro'];

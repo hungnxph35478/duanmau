@@ -14,7 +14,7 @@
   <body>
     
       <div class="image-logo">
-        <img src="https://shopdunk.com/images/uploaded/Logo.png" alt="" />
+        <img src="https://shopdunk.com/images/uploaded/Logo.png" alt="">
       </div>
       <div class="body-info">
         <p>

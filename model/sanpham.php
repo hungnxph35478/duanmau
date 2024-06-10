@@ -1,9 +1,11 @@
 <?php 
+// thêm sản phẩm
 function issert_sanpham($tenloai,$giasp,$hinh,$mota,$iddm){
     $sql = "insert into sanpham(name,price,img,mota,iddm) values('$tenloai', '$giasp', '$hinh',  '$mota', '$iddm' )";
     pdo_execute($sql);
 }
 
+// xóa sản phẩm
 function delete_sanpham($id){
     $sql = "delete from sanpham where id=".$id;
                 pdo_execute($sql);
@@ -64,6 +66,50 @@ function load_sanpham_cungloai($id, $iddm) {
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // cập nhật

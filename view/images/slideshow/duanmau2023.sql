@@ -40,7 +40,7 @@ CREATE TABLE `binhluan` (
 --
 
 INSERT INTO `binhluan` (`id`, `noidung`, `iduser`, `idpro`, `ngaybinhluan`) VALUES
-(12, 'xịn', 1, 12, '08:24:21pm 13/02/23');
+(12, 'xịn', 1, 12, '08:24:21pm 09/09/23');
 
 -- --------------------------------------------------------
 
@@ -115,7 +115,7 @@ CREATE TABLE `taikhoan` (
 --
 
 INSERT INTO `taikhoan` (`id`, `user`, `pass`, `email`, `address`, `tel`, `role`) VALUES
-(1, 'huyhung', '123456', 'hunglhph44079@fpt.edu.vn', 'Thanh Hóa', '0123456', 1);
+(1, 'nguyenxuanhung', '123456', 'hungnxph35478@fpt.edu.vn', 'Hà Nội', '0387732069', 1);
 
 --
 -- Indexes for dumped tables

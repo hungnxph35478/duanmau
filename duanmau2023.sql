@@ -61,7 +61,7 @@ CREATE TABLE `binhluan` (
 --
 
 INSERT INTO `binhluan` (`id`, `noidung`, `iduser`, `idpro`, `ngaybinhluan`) VALUES
-(12, 'xịn', 1, 12, '08:24:21pm 13/02/23');
+(12, 'xịn', 1, 12, '08:24:21pm 09/09/23');
 
 -- --------------------------------------------------------
 
@@ -159,11 +159,10 @@ CREATE TABLE `taikhoan` (
 --
 
 INSERT INTO `taikhoan` (`id`, `user`, `pass`, `email`, `address`, `tel`, `role`) VALUES
-(1, 'huyhung', '123456', 'hunglhph44079@fpt.edu.vn', 'Thanh Hóa', '0123456', 1),
-(3, 'demotest', '123456', 'ahaha@gmail.com', NULL, NULL, 0),
-(4, 'huyhung', '123456', 'hunglhph44079@fpt.edu.vn', 'Thanh Hóa', '0123456', 1),
-(5, 'demotest1', '123456', 'ahihi@gmail.com', NULL, NULL, 0),
-(6, 'testkadm', '123', 'jhfhgsdhfhsd@gmail.com', NULL, NULL, 0);
+(1, 'nguyenxuanhung', '123456', 'hungnxph35478@fpt.edu.vn', 'Hà Nội', '0387732069', 1),
+(2, 'nxhhph35478', '123456', 'hungnguyenxuan@gmail.com', NULL, NULL, 0),
+(3, 'nguyenhungnxh', '123456', 'hungdayne@gmail.com', NULL, '0387732069', 1),
+(4, 'demotest1', '123456', 'ahihi@gmail.com', NULL, NULL, 0);
 
 --
 -- Indexes for dumped tables
